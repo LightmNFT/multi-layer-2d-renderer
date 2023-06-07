@@ -12,7 +12,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Form, FormField } from "./ui/form";
 import { Button } from "./ui/button";
-import { Github, GithubIcon, PlusCircle } from "lucide-react";
+import { Github, PlusCircle } from "lucide-react";
 
 import "./App.css";
 import ResourceField from "./ResourceField";
