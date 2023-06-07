@@ -114,7 +114,7 @@ function App() {
                   <>
                     <MultiLayer2DRenderer
                       resources={resources}
-                      className="max-w-[256px] max-h-[256px] aspect-square object-contain p-2 border rounded-lg"
+                      className="max-w-[256px] max-h-[256px] aspect-square p-2 border rounded-lg"
                     />
                     <form
                       onSubmit={form.handleSubmit(onSubmit)}

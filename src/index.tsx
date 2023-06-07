@@ -56,7 +56,7 @@ export default function MultiLayer2DRenderer({
         width={actualW}
         height={actualH}
         options={{ backgroundColor: 0xffffff }}
-        className={`${resourceLoaded ? "hidden " : ""}${className}`}
+        className={`object-contain ${resourceLoaded ? "hidden " : ""}${className}`}
         style={style}
       >
         <Container sortableChildren>
