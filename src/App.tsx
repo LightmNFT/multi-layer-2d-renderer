@@ -2,6 +2,7 @@ import { z } from "zod";
 import {
   TBaseField,
   formSchema,
+  githubLink,
   lightmLink,
   npmImg,
   npmLink,
@@ -11,7 +12,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Form, FormField } from "./ui/form";
 import { Button } from "./ui/button";
-import { PlusCircle } from "lucide-react";
+import { Github, GithubIcon, PlusCircle } from "lucide-react";
 
 import "./App.css";
 import ResourceField from "./ResourceField";
@@ -81,11 +82,14 @@ function App() {
   }
 
   return (
-    <div className="min-h-screen py-2 flex flex-col justify-center items-center gap-4 container">
-      <h1 className="text-4xl font-extrabold">
+    <div className="min-h-screen p-2 flex flex-col justify-center items-center gap-4 container">
+      <h1 className="text-4xl font-extrabold flex flex-wrap items-center gap-2">
         Multi-Layer-2D-Renderer
         <a href={npmLink} target="_blank">
           <img src={npmImg} />
+        </a>
+        <a href={githubLink} target="_blank">
+          <Github />
         </a>
       </h1>
       <p className="flex items-center gap-2 text-lg font-semibold">

@@ -8,6 +8,9 @@ export const npmImg =
 export const npmLink =
   "https://www.npmjs.com/package/@lightm-nft/multi-layer-2d-renderer";
 
+export const githubLink =
+  "https://github.com/LightmNFT/multi-layer-2d-renderer";
+
 export const INHERIT_RENDER_CONTEXT = "INHERIT";
 
 const baseFieldSchema = z.object({
