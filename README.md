@@ -49,3 +49,7 @@ interface IMultiLayer2DRenderer {
   style?: CSSProperties;
 }
 ```
+
+## DEMO
+
+Check https://lightm-multi-layer-2d-renderer.netlify.app/ to try it

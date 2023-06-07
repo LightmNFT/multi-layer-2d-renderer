@@ -15,6 +15,10 @@
   "files": [
     "dist"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LightmNFT/multi-layer-2d-renderer"
+  },
   "dependencies": {
     "@hookform/resolvers": "^3.1.0",
     "@pixi/react": "^7.1.0",
