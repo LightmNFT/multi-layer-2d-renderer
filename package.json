@@ -10,7 +10,7 @@
     "build-package": "tsc && vite build --config='./vite.lib.config.ts'",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "prepublish": "yarn build-package"
+    "prepare": "yarn build-package"
   },
   "license": "GPL-3.0-or-later",
   "files": [
