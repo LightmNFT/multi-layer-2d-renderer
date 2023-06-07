@@ -1,6 +1,6 @@
 {
   "name": "@lightm-nft/multi-layer-2d-renderer",
-  "version": "0.1.0-alpha.2",
+  "version": "0.1.0-alpha.3",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -9,7 +9,8 @@
     "build": "tsc && vite build",
     "build-package": "tsc && vite build --config='./vite.lib.config.ts'",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "prepublish": "yarn build-package"
   },
   "license": "GPL-3.0-or-later",
   "files": [
