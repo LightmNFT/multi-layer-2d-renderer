@@ -1,6 +1,6 @@
 {
   "name": "@lightm-nft/multi-layer-2d-renderer",
-  "version": "0.1.0-alpha.3",
+  "version": "0.1.0-alpha.4",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

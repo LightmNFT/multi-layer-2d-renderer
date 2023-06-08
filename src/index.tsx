@@ -16,12 +16,14 @@ export interface IResource {
 
 interface IMultiLayer2DRenderer {
   resources: IResource[];
+  customLoadingComponent?: React.ReactNode;
   className?: string;
   style?: CSSProperties;
 }
 
 export default function MultiLayer2DRenderer({
   resources,
+  customLoadingComponent,
   className,
   style,
 }: IMultiLayer2DRenderer) {
@@ -46,17 +48,21 @@ export default function MultiLayer2DRenderer({
 
   return (
     <>
-      {resourceLoaded ? (
-        <Skeleton className="w-96 h-96 bg-gray-300 flex justify-center items-center">
-          <Loader2 className="animate-spin" />
-        </Skeleton>
-      ) : null}
+      {resourceLoaded
+        ? customLoadingComponent ?? (
+            <Skeleton className="w-96 h-96 bg-gray-300 flex justify-center items-center">
+              <Loader2 className="animate-spin" />
+            </Skeleton>
+          )
+        : null}
 
       <Stage
         width={actualW}
         height={actualH}
         options={{ backgroundColor: 0xffffff }}
-        className={`object-contain ${resourceLoaded ? "hidden " : ""}${className}`}
+        className={`object-contain ${
+          resourceLoaded ? "hidden " : ""
+        }${className}`}
         style={style}
       >
         <Container sortableChildren>

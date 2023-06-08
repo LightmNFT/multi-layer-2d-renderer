@@ -45,6 +45,7 @@ interface IResource {
 
 interface IMultiLayer2DRenderer {
   resources: IResource[];
+  customLoadingComponent?: React.ReactNode;
   className?: string;
   style?: CSSProperties;
 }
